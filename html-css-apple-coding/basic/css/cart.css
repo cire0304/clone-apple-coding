@@ -1,0 +1,86 @@
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    /* border: 1px solid black; */
+}
+
+.cart-table td {
+    padding: 15px;
+    border-bottom: 1px solid #c2d3de;
+
+
+}
+
+.cart-background {
+    width: 100%;
+    /* min-height: 350px; */
+    background-color: #c2d3de;
+    padding: 30px;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.cart-table {
+    width: 100%;
+    max-width: 700px;
+    /* float: right; */
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cart-table th:nth-child(2) {
+    /* width: 400px; */
+}
+
+.btn {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(168, 166, 166);
+    color: white;
+    cursor: pointer;
+    /* float: right; */
+    position: absolute;
+    /* float: right; */
+    /* top: auto; */
+    
+    /* bottom: 0; */
+    /* left: 0px; */
+    
+}
+
+.btn:hover {
+    background-color: rebeccapurple;
+}
+.btn:focus {
+    background-color: red;
+}
+
+.btn:active {
+    background-color: brown;
+}
+
+.input-text {
+    font-size: 20px;
+}
+
+.input-text:focus {
+    /* border: 2px solid red; */
+}
+
+.container {
+    /* margin: auto; */
+}

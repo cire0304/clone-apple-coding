@@ -1,0 +1,70 @@
+.container {
+    width: 800px;
+    height: 100px;
+    background: black;
+}
+.left {
+    width: 80%;
+    height: 100%;
+    background: rebeccapurple;
+    float: left;
+}
+.right {
+    width: 20%;
+    height: 100%;
+    background: blue;
+    float: left;
+}
+.profile_img {
+    width: 5%;
+    height: 100%;
+    background: yellow;
+    float: left;
+}
+.temp {
+    width: 10%;
+    height: 100%;
+    background: red;
+    float: left;
+}
+.nickname {
+    width: 100%;
+    height: 50%;
+    background: blue;
+}
+.header {
+    width: 100%;
+    height: 30%;
+    background: gainsboro;
+}
+.time {
+    width: 100%;
+    height: 50%;
+    background: palegoldenrod;
+}
+.title {
+    width: 100%;
+    height: 10%;
+    background: palegoldenrod;
+}
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background: cornflowerblue;
+    /*float: left;*/
+    display: inline-block;
+}
+
+.content {
+    width: 100%;
+    height: 60%;
+    background: red;
+    /*float: left;*/
+}
+
+.footer {
+    width: 100%;
+    height: 10%;
+    background: aqua;
+    /*clear: both;*/
+}
