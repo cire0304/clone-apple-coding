@@ -38,6 +38,10 @@
             $.get(`https://codingapple1.github.io/js/more${index++}.json`)
                 .done((item) => {
                     console.log(item);
+                    con
+                    item.sort(function(a, b) {
+                        return a.price - b.price;
+                    })
 
                     item.forEach(element => {
                         var template =

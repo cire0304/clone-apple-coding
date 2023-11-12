@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn">버튼</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+
+        async function 버튼() {
+            var promise = new Promise((res, err) => {
+                $('#btn')[0].addEventListener('click', () => {
+                    res("성공했어요");
+                })
+            })
+            console.log('him');
+            var res = await promise;
+            console.log('her');
+            console.log(res);
+        }
+        버튼();
+        
+
+        console.log('her');
+
+    </script>
+
+</body>
+
+</html>
