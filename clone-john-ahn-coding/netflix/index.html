@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/icons">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/util.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-wrap">
+                <img class="" src="assets/icons/logo.png" alt="">
+            </div>
+            <div class="avartar-wrap">
+                <img src="assets/icons/avatar.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <header class="header__background">
+        <div class="header__container">
+            <div class="header__title f-48">
+                태어난 김에 세계일주
+            </div>
+            <div class="header__buttons">
+                <button class="btn">Play</button>
+                <button class="btn">My List</button>
+            </div>
+            <div class="header__description primary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae sunt iure consectetur, autem soluta
+                laboriosam labore voluptate quaerat, dolor veritatis nulla, nisi maiores illo asperiores doloribus
+                laudantium iste vitae repudiandae!
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="content-container">
+            <div>
+                <p class="content__title primary f-24">netflix originals</p>
+            </div>
+            <div id="originals" class="content__thumbnails scorllbar-x">
+            </div>
+        </section>
+
+        <section class="content-container">
+            <div>
+                <p class="content__title primary f-24">trending now</p>
+            </div>
+            <div id="trending" class=" content__thumbnails scorllbar-x">
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <script>
+        const originals = document.querySelector('#originals')
+        for (let pageNo = 1; pageNo <= 10; pageNo++) {
+            if (pageNo < 10) pageNo = '0' + pageNo;
+
+            originals.insertAdjacentHTML(
+                'beforeend',
+                `
+                <div class="thumbnail">
+                    <img src="assets/images/poster${pageNo}.jpg" alt="">
+                </div>
+                `
+            )
+        }
+
+        const trending = document.querySelector('#trending')
+        for (let pageNo = 11; pageNo <= 20; pageNo++) {
+            trending.insertAdjacentHTML(
+                'beforeend',
+                `
+                <div class="thumbnail">
+                    <img src="assets/images/poster${pageNo}.jpg" alt="">
+                </div>
+                `
+            )
+        }
+    </script>
+
+    <script src="script.js" defer></script>
+</body>
+
+
+</html>

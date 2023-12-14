@@ -1,0 +1,31 @@
+
+
+.navbar {
+    width: 100%;
+    position: fixed;   
+}
+
+.navbar-container {
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 0 15px 15px 15px;
+}
+
+.navbar-container * {
+    height: 100%;
+}
+
+.avartar-wrap{
+    height: 50px;
+    width: 50px;
+}
+
+.avartar-wrap img{
+    height: 100%;
+    width: 100%;
+}
+
